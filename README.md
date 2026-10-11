@@ -1,4 +1,4 @@
-# 🚦 US Bankruptcy Risk Scorecard — Excel + Power Query
+#  US Bankruptcy Risk Scorecard — Excel + Power Query
 
 ![Excel](https://img.shields.io/badge/Excel-Power%20Query%20%2B%20Pivots-217346?logo=microsoftexcel&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-validation-3776AB?logo=python&logoColor=white)
@@ -50,7 +50,7 @@
 | `Bankruptcy Trend` · `Zone Mix` · `Ratio Comparison` | Supporting pivots / median-ratio table |
 | `Company Lookup` | Type a company ID → status, Z-score, zone, rank, decile, verdict |
 
-## 🧠 Method in brief
+##  Method in brief
 
 1. **Power Query** renames `X1…X18`, adds `Failed_Flag`, finds each company's last year, and flags rows valid for scoring (`Total_Assets ≥ 1` and `Total_Liabilities ≥ 1`).
 2. **Altman Z** = 1.2·WC/TA + 1.4·RE/TA + 3.3·EBIT/TA + 0.6·MVE/TL + 1.0·Sales/TA → **Safe** > 2.99, **Grey** 1.81–2.99, **Distress** < 1.81.
@@ -69,7 +69,7 @@ python src/validate_scorecard.py        # expect: ALL CHECKS PASSED
 python src/make_charts.py               # regenerate images/generated/*.png
 ```
 
-## 🚀 Using the workbook
+##  Using the workbook
 
 * Open in **Excel 2021 or Microsoft 365** (the lookup uses `XLOOKUP`). The file is ~35 MB.
 * **Company Lookup** → enter an ID such as `C_5178` in `B3`.
